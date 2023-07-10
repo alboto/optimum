@@ -195,6 +195,10 @@ class ImageGPTOnnxConfig(GPT2OnnxConfig):
     pass
 
 
+class CTRLOnnxConfig(GPT2OnnxConfig):
+    pass
+
+
 class GPTNeoOnnxConfig(TextDecoderOnnxConfig):
     DEFAULT_ONNX_OPSET = 13
     NORMALIZED_CONFIG_CLASS = NormalizedTextConfig.with_args(num_attention_heads="num_heads")
